@@ -70,6 +70,7 @@ public class EatCommand implements CommandExecutor {
             sender.sendMessage("You can't do that!!!");
           }
         }
+        return true;
     }
-    return true;
+    
 }

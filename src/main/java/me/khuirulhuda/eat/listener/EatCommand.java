@@ -71,5 +71,5 @@ public class EatCommand implements CommandExecutor {
           }
         }
     }
-    
+    return true;
 }

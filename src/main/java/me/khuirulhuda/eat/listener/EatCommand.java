@@ -16,6 +16,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.Material;
+import org.bukkit.inventory.InventoryView;
+import org.bukkit.entity.HumanEntity;
+import org.bukkit.event.Cancellable;
+import org.bukkit.event.HandlerList;
+import org.bukkit.event.block.Action;
+
 
 /**
  * i doesn't have a pc so there's many missing import because i'm not using real ide
@@ -27,7 +33,7 @@ public class EatCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if ( sender instanceof Player ) {
           Player player = (Player) sender;
-          Itemstack cookedChicken = new ItemStack(MATERIAL.COOKED_CHICKEN);
+          ItemStack cookedChicken = new ItemStack(Material.COOKED_CHICKEN);
           cookedChicken.setAmount(5);
           
           

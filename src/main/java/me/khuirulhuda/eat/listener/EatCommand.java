@@ -21,6 +21,8 @@ import org.bukkit.entity.HumanEntity;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.block.Action;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.event.Player;
 
 
 /**

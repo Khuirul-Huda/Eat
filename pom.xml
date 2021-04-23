@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.khuirulhuda.eat</groupId>
+  <groupId>me.khuirulhuda.eat</groupId>
   <artifactId>Eat</artifactId>
   <version>1.0-SNAPSHOT</version>
 
@@ -12,17 +12,7 @@
   <!-- FIXME change it to the project's website -->
   <url>https://khuirul-huda.github.io/Eat</url>
   <!-- Uses the properties in this file for plugin.yml and config.yml -->
-	<resources>
-		<resource>
-			<directory>${basedir}/src/main/resources</directory>
-			<filtering>true</filtering>
-			<includes>
-				<include>plugin.yml</include>
-				<include>config.yml</include>
-			</includes>
-		</resource>
-	</resources>
-
+	
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>

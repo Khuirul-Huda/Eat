@@ -11,6 +11,17 @@
   <name>Eat</name>
   <!-- FIXME change it to the project's website -->
   <url>https://khuirul-huda.github.io/Eat</url>
+  <!-- Uses the properties in this file for plugin.yml and config.yml -->
+	<resources>
+		<resource>
+			<directory>${basedir}/src/main/resources</directory>
+			<filtering>true</filtering>
+			<includes>
+				<include>plugin.yml</include>
+				<include>config.yml</include>
+			</includes>
+		</resource>
+	</resources>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,6 +44,12 @@
            <artifactId>spigot-api</artifactId>
            <version>1.16.5-R0.1-SNAPSHOT</version>
            <scope>provided</scope>
+    </dependency>
+     <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
     </dependency>
 </dependencies>
 

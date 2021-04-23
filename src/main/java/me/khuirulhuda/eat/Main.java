@@ -9,10 +9,10 @@ import org.bukkit.event.Listener;
 public class Main extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
-        getLogger().info("Plugin Enabled");
+        this.getCommand("eat").setExecutor(new EatCommand());
     }
     @Override
     public void onDisable() {
-        getLogger().info("Plugin disabled");
+        //nothing to do
     }
 }

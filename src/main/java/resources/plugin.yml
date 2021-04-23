@@ -1,3 +1,9 @@
 name: Eat
 version: 0.1
 main: me.khuirulhuda.eat.Main
+
+commands:
+    eat:
+        description: Give many food for you
+        usage: /eat
+        

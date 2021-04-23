@@ -22,7 +22,7 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.event.Player;
+
 
 
 /**
@@ -51,7 +51,7 @@ public class EatCommand implements CommandExecutor {
                 }
               }
               if (isEmpty) {
-                int playerFoodLevel = (int) playerInvolved.getPlayer().getFoodLevel();
+                int playerFoodLevel = (int) player.getFoodLevel();
                 if ( playerFoodLevel < 20 ) {
                   player.getInventory().addItem(cookedChicken);
                 } else {

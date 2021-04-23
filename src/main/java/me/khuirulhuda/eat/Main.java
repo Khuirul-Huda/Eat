@@ -1,5 +1,8 @@
 package me.khuirulhuda.eat;
 
+import org.bukkit.plugin.java.JavaPlugin;
+import java.awt.color;
+
 /**
  * Hello world!
  *

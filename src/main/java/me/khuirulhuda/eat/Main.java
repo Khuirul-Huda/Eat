@@ -4,11 +4,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.net.*;
 import org.bukkit.event.Listener;
 
-/**
- * Hello world!
- *
- */
-public class Main extends JavaPlugin {
+
+
+public class Main extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getLogger().info("Plugin Enabled");

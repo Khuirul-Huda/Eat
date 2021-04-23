@@ -14,7 +14,12 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.CommandExecutor;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.Material;
 
+/**
+ * i doesn't have a pc so there's many missing import because i'm not using real ide
+ * */
 
 
 public class EatCommand implements CommandExecutor {

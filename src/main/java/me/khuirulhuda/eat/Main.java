@@ -1,4 +1,4 @@
-package com.khuirulhuda.eat;
+package me.khuirulhuda.eat;
 
 /**
  * Hello world!

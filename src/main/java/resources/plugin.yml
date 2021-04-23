@@ -1,6 +1,10 @@
 name: Eat
-version: 0.1
+description: Give Free Food for Players
+version: 0.2
 main: me.khuirulhuda.eat.Main
+author: Khuirul-Huda
+load: POSTWORLD
+website: https://khuirul-huda.github.io/Eat
 
 commands:
     eat:

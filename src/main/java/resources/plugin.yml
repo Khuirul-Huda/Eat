@@ -1,9 +1,11 @@
 name: Eat
-version: 0.2
 main: me.khuirulhuda.eat.Main
+version: 1.0
+website: https://khuirul-huda.github.io/Eat
+description: Simple Plugin
 author: Khuirul-Huda
 load: POSTWORLD
-website: https://khuirul-huda.github.io/Eat
+
 
 commands:
     eat:

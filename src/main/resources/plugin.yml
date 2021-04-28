@@ -1,0 +1,13 @@
+name: Eat
+main: me.khuirulhuda.eat.Main
+version: 1.0
+website: https://khuirul-huda.github.io/Eat
+description: Simple plugin for give free food to players
+author: Khuirul-Huda
+load: POSTWORLD
+
+commands:
+    eat:
+        description: Give many food for you
+        usage: /eat
+        

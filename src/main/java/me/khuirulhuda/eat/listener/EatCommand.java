@@ -52,7 +52,7 @@ public class EatCommand implements CommandExecutor {
               }
               
                 int playerFoodLevel = (int) player.getFoodLevel();
-                if ( playerFoodLevel < 20 ) {
+                if ( playerFoodLevel < 40 ) {
                   player.getInventory().addItem(cookedChicken);
                 } else {
                   sender.sendMessage("You're not hungry yet!");

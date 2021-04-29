@@ -50,24 +50,22 @@ public class EatCommand implements CommandExecutor {
                   break;
                 }
               }
-              if (isEmpty) {
+              
                 int playerFoodLevel = (int) player.getFoodLevel();
                 if ( playerFoodLevel < 20 ) {
                   player.getInventory().addItem(cookedChicken);
                 } else {
                   sender.sendMessage("You're not hungry yet!");
                 }
-              } else {
-                sender.sendMessage("Your Inventory is Full!");
-              }
+              
               
             } else {
               
-              sender.sendMessage("You can't do that!");
+              sender.sendMessage("you already have cooked chicken in your inventory");
               
             }
           } else {
-            sender.sendMessage("You can't do that!!!");
+            sender.sendMessage("See your hand!");
           }
         }
         return true;

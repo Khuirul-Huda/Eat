@@ -16,6 +16,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.inventory.ItemStack;
 import java.lang.Exception;
+import java.lang.String;
+import java.util.logging.Logger;
 import org.bukkit.inventory.InventoryView;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.event.Cancellable;
@@ -57,7 +59,7 @@ public class EatCommand implements CommandExecutor {
                   try {
                     player.getInventory().addItem(cookedChicken);
                     
-                    Bukkit.broadcastMessage(player.getName(), "got free food from /eat");
+                    getServer().broadcastMessage(player.getName(), "got free food from /eat");
                     
                   } catch(Exception e) {
                     Bukkit.getLogger().warning(e.toString());

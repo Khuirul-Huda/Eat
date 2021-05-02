@@ -17,6 +17,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.inventory.ItemStack;
 import java.lang.Exception;
 import java.lang.String;
+import org.bukkit.Server;
 import java.util.logging.Logger;
 import org.bukkit.inventory.InventoryView;
 import org.bukkit.entity.HumanEntity;
@@ -34,7 +35,7 @@ import org.bukkit.inventory.Inventory;
 
 
 public class EatCommand extends JavaPlugin implements CommandExecutor {
-  private Logger log = this.getLogger();
+  private Logger log = JavaPlugin.getLogger();
   @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if ( sender instanceof Player ) {

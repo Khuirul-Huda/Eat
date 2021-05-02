@@ -78,7 +78,7 @@ public class EatCommand implements CommandExecutor {
             }
           } else {
             sender.sendMessage("See your hand!");
-            Bukkit.getLogger().warning(player.getName, "Already have a food (hand)")
+            Bukkit.getLogger().warning(player.getName, "Already have a food (hand)");
           }
         }
         return true;

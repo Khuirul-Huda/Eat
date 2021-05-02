@@ -23,6 +23,7 @@ import org.bukkit.entity.HumanEntity;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.block.Action;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.inventory.Inventory;
 
 
@@ -32,8 +33,8 @@ import org.bukkit.inventory.Inventory;
  * */
 
 
-public class EatCommand implements CommandExecutor {
-  private Logger log = getLogger();
+public class EatCommand extends JavaPlugin implements CommandExecutor {
+  private Logger log = this.getLogger();
   @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if ( sender instanceof Player ) {
@@ -70,7 +71,7 @@ public class EatCommand implements CommandExecutor {
                   
                 } else {
                   sender.sendMessage("You're not hungry yet!");
-                  log.warning(player.getName(), "not hungry yet");
+                  log.warning("not hungry yet");
                 }
               
               

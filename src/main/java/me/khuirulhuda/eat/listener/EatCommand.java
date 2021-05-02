@@ -80,7 +80,7 @@ public class EatCommand extends JavaPlugin implements CommandExecutor {
               
               sender.sendMessage("you already have cooked chicken in your inventory");
               
-              this.getLogger().warning(write);
+              this.getLogger().warning("already have a food");
             }
           } else {
             sender.sendMessage("See your hand!");

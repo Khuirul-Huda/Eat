@@ -1,3 +1,9 @@
+![GitHub all releases](https://img.shields.io/github/downloads/Khuirul-Huda/Eat/total?style=for-the-badge)<br>
+[![GitHub license](https://img.shields.io/github/license/Khuirul-Huda/Eat?style=for-the-badge)](https://github.com/Khuirul-Huda/Eat/blob/main/LICENSE)<br>
+![GitHub branch checks state](https://img.shields.io/github/checks-status/Khuirul-Huda/Eat/main?style=for-the-badge)<br>
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Khuirul-Huda/Eat?style=for-the-badge)<br>
+![Author](https://img.shields.io/badge/AUTHOR-Khuirul%20Huda-green?style=for-the-badge)
+
 # Eat Plugin
 
 Simple spigot plugin to give many food to players for free

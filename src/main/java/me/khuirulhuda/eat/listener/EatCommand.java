@@ -53,19 +53,32 @@ public class EatCommand implements CommandExecutor {
               
                 int playerFoodLevel = (int) player.getFoodLevel();
                 if ( playerFoodLevel < 40 ) {
-                  player.getInventory().addItem(cookedChicken);
+                  
+                  try {
+                    player.getInventory().addItem(cookedChicken);
+                    
+                    Bukkit.broadcastMessage(player.getName, "got free food from /eat");
+                    
+                  } catch(Exception e) {
+                    Bukkit.getLogger().warning(e);
+                    sender.sendMessage("An Error Occured, Your Inventory is full?");
+                  }
+                  
+                  
                 } else {
                   sender.sendMessage("You're not hungry yet!");
+                  Bukkit.getLogger().warning(player.getName, "not hungry yet");
                 }
               
               
             } else {
               
               sender.sendMessage("you already have cooked chicken in your inventory");
-              
+              Bukkit.getLogger().warning(player.getName, "already have a cooked chicken");
             }
           } else {
             sender.sendMessage("See your hand!");
+            Bukkit.getLogger().warning(player.getName, "Already have a food (hand)")
           }
         }
         return true;

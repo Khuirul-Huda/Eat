@@ -79,12 +79,12 @@ public class EatCommand extends JavaPlugin implements CommandExecutor {
             } else {
               
               sender.sendMessage("you already have cooked chicken in your inventory");
-              String write = new String("»", player.getName().toString(), "already have a cooked chicken");
+              
               this.getLogger().warning(write);
             }
           } else {
             sender.sendMessage("See your hand!");
-            this.getLogger().warning(player.getName(), "Already have a food (hand)");
+            this.getLogger().warning("Already have a food (hand)");
           }
         }
         return true;

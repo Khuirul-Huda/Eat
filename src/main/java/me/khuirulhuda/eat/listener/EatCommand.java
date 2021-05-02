@@ -26,13 +26,9 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.event.block.Action;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.inventory.Inventory;
-
-
-
 /**
  * i doesn't have a pc so there's many missing import because i'm not using real ide
  * */
-
 
 public class EatCommand extends JavaPlugin implements CommandExecutor {
   
@@ -42,8 +38,6 @@ public class EatCommand extends JavaPlugin implements CommandExecutor {
           Player player = (Player) sender;
           ItemStack cookedChicken = new ItemStack(Material.COOKED_CHICKEN);
           cookedChicken.setAmount(5);
-          
-          
           
           if (!(player.getItemInHand().getType() == Material.COOKED_CHICKEN)) {
             if (!(player.getInventory().contains(Material.COOKED_CHICKEN))) {
@@ -61,8 +55,6 @@ public class EatCommand extends JavaPlugin implements CommandExecutor {
                   
                   try {
                     player.getInventory().addItem(cookedChicken);
-                    
-                    
                     
                   } catch(Exception e) {
                     this.getLogger().warning(e.toString());

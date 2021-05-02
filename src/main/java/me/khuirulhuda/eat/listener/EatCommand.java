@@ -15,7 +15,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.Material;
+import java.lang.Exception;
 import org.bukkit.inventory.InventoryView;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.event.Cancellable;
@@ -57,28 +57,28 @@ public class EatCommand implements CommandExecutor {
                   try {
                     player.getInventory().addItem(cookedChicken);
                     
-                    Bukkit.broadcastMessage(player.getName, "got free food from /eat");
+                    Bukkit.broadcastMessage(player.getName(), "got free food from /eat");
                     
                   } catch(Exception e) {
-                    Bukkit.getLogger().warning(e);
+                    Bukkit.getLogger().warning(e.toString());
                     sender.sendMessage("An Error Occured, Your Inventory is full?");
                   }
                   
                   
                 } else {
                   sender.sendMessage("You're not hungry yet!");
-                  Bukkit.getLogger().warning(player.getName, "not hungry yet");
+                  Bukkit.getLogger().warning(player.getName(), "not hungry yet");
                 }
               
               
             } else {
               
               sender.sendMessage("you already have cooked chicken in your inventory");
-              Bukkit.getLogger().warning(player.getName, "already have a cooked chicken");
+              Bukkit.getLogger().warning(player.getName(), "already have a cooked chicken");
             }
           } else {
             sender.sendMessage("See your hand!");
-            Bukkit.getLogger().warning(player.getName, "Already have a food (hand)");
+            Bukkit.getLogger().warning(player.getName(), "Already have a food (hand)");
           }
         }
         return true;

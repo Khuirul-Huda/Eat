@@ -33,6 +33,7 @@ import org.bukkit.inventory.Inventory;
 
 
 public class EatCommand implements CommandExecutor {
+  private Logger log = getLogger();
   @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if ( sender instanceof Player ) {
@@ -59,28 +60,28 @@ public class EatCommand implements CommandExecutor {
                   try {
                     player.getInventory().addItem(cookedChicken);
                     
-                    getServer().broadcastMessage(player.getName(), "got free food from /eat");
+                    this.getServer().broadcastMessage(player.getName(), "got free food from /eat");
                     
                   } catch(Exception e) {
-                    Bukkit.getLogger().warning(e.toString());
+                    log.warning(e.toString());
                     sender.sendMessage("An Error Occured, Your Inventory is full?");
                   }
                   
                   
                 } else {
                   sender.sendMessage("You're not hungry yet!");
-                  Bukkit.getLogger().warning(player.getName(), "not hungry yet");
+                  log.warning(player.getName(), "not hungry yet");
                 }
               
               
             } else {
               
               sender.sendMessage("you already have cooked chicken in your inventory");
-              Bukkit.getLogger().warning(player.getName(), "already have a cooked chicken");
+              log.warning(player.getName(), "already have a cooked chicken");
             }
           } else {
             sender.sendMessage("See your hand!");
-            Bukkit.getLogger().warning(player.getName(), "Already have a food (hand)");
+            log.warning(player.getName(), "Already have a food (hand)");
           }
         }
         return true;

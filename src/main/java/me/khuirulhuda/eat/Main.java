@@ -8,10 +8,19 @@ import me.khuirulhuda.eat.listener.*;
 
 
 public class Main extends JavaPlugin implements Listener {
+  
+  private static Main INSTANCE;
+  
     @Override
     public void onEnable() {
         this.getCommand("eat").setExecutor(new EatCommand());
+        INSTANCE = this;
+        this.getLogger().info("Eat Plugin Successfully Enabled");
     }
+    public static Main getInstance() {
+      return INSTANCE;
+    }
+    
     @Override
     public void onDisable() {
         //nothing to do

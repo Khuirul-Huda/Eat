@@ -30,7 +30,7 @@ import org.bukkit.inventory.Inventory;
  * i doesn't have a pc so there's many missing import because i'm not using real ide
  * */
 
-public class EatCommand implements CommandExecutor {
+public class EatCommand implements CommandExecutor, Listener {
   
   @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -64,7 +64,7 @@ public class EatCommand implements CommandExecutor {
                   
                 } else {
                   sender.sendMessage("You're not hungry yet!");
-                  this.getLogger().warning("not hungry yet");
+                  Main.getInstance().getLogger().warning("not hungry yet");
                 }
               
               
@@ -72,11 +72,11 @@ public class EatCommand implements CommandExecutor {
               
               sender.sendMessage("you already have cooked chicken in your inventory");
               
-              this.getLogger().warning("already have a food");
+              Main.getInstance().getLogger().warning("already have a food");
             }
           } else {
             sender.sendMessage("See your hand!");
-            this.getLogger().warning("Already have a food (hand)");
+            Main.getInstance().getLogger().warning("Already have a food (hand)");
           }
         }
         return true;

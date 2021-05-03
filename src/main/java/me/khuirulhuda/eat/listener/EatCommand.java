@@ -55,6 +55,7 @@ public class EatCommand implements CommandExecutor, Listener {
                   
                   try {
                     player.getInventory().addItem(cookedChicken);
+                    sender.sendMessage("Successfully added Cooked Chicken");
                     
                   } catch(Exception e) {
                     Main.getInstance().getLogger().warning(e.toString());

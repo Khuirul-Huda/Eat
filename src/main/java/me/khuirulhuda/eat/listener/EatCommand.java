@@ -57,7 +57,7 @@ public class EatCommand implements CommandExecutor, Listener {
                     player.getInventory().addItem(cookedChicken);
                     
                   } catch(Exception e) {
-                    this.getLogger().warning(e.toString());
+                    Main.getInstance().getLogger().warning(e.toString());
                     sender.sendMessage("An Error Occured, Your Inventory is full?");
                   }
                   

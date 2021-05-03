@@ -15,7 +15,7 @@ public class Main extends JavaPlugin implements Listener {
     public void onEnable() {
         this.getCommand("eat").setExecutor(new EatCommand());
         INSTANCE = this;
-        this.getLogger().info("Eat Plugin Successfully Enabled");
+        this.getLogger().info("Eat Plugin by Khuirul-Huda Successfully Enabled");
     }
     public static Main getInstance() {
       return INSTANCE;
@@ -23,6 +23,6 @@ public class Main extends JavaPlugin implements Listener {
     
     @Override
     public void onDisable() {
-        //nothing to do
+        this.getLogger().info("Eat Plugin RenderyCrafty Successfully Disabled");
     }
 }

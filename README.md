@@ -2,7 +2,9 @@
 [![GitHub license](https://img.shields.io/github/license/Khuirul-Huda/Eat?style=for-the-badge)](https://github.com/Khuirul-Huda/Eat/blob/main/LICENSE)<br>
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/Khuirul-Huda/Eat/main?style=for-the-badge)<br>
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Khuirul-Huda/Eat?style=for-the-badge)<br>
-![Author](https://img.shields.io/badge/AUTHOR-Khuirul%20Huda-green?style=for-the-badge)
+![Author](https://img.shields.io/badge/AUTHOR-Khuirul%20Huda-green?style=for-the-badge)<br>
+[![hits](https://hits.deltapapa.io/github/Khuirul-Huda/Eat.svg)](#)
+
 
 # Eat Plugin
 

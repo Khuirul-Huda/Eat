@@ -24,13 +24,13 @@ import org.bukkit.entity.HumanEntity;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.block.Action;
-import org.bukkit.plugin.java.JavaPlugin;
+import me.khuirulhuda.eat.Main;
 import org.bukkit.inventory.Inventory;
 /**
  * i doesn't have a pc so there's many missing import because i'm not using real ide
  * */
 
-public class EatCommand extends JavaPlugin implements CommandExecutor {
+public class EatCommand implements CommandExecutor {
   
   @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {

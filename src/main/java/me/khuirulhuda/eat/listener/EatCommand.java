@@ -42,7 +42,6 @@ public class EatCommand implements CommandExecutor, Listener {
           if (!(player.getItemInHand().getType() == Material.COOKED_CHICKEN)) {
             if (!(player.getInventory().contains(Material.COOKED_CHICKEN))) {
               
-              
                 int playerFoodLevel = (int) player.getFoodLevel();
                 if ( playerFoodLevel < 10 ) {
                   

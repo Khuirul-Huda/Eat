@@ -42,13 +42,6 @@ public class EatCommand implements CommandExecutor, Listener {
           if (!(player.getItemInHand().getType() == Material.COOKED_CHICKEN)) {
             if (!(player.getInventory().contains(Material.COOKED_CHICKEN))) {
               
-              boolean isEmpty = true;
-              for (ItemStack item : player.getInventory().getContents()) {
-                if ( item != null) {
-                  isEmpty = false;
-                  break;
-                }
-              }
               
                 int playerFoodLevel = (int) player.getFoodLevel();
                 if ( playerFoodLevel < 10 ) {

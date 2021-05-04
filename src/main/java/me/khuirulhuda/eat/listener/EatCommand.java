@@ -51,7 +51,7 @@ public class EatCommand implements CommandExecutor, Listener {
               }
               
                 int playerFoodLevel = (int) player.getFoodLevel();
-                if ( playerFoodLevel < 40 ) {
+                if ( playerFoodLevel < 10 ) {
                   
                   try {
                     player.getInventory().addItem(cookedChicken);

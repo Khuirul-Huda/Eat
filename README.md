@@ -9,6 +9,7 @@
 # Eat Plugin
 
 Simple spigot plugin to give many food to players for free
+![Preview](https://raw.githubusercontent.com/Khuirul-Huda/Eat/main/.images/foodbar_screenshot.png)
 
 # Installation
 Simpliest way is download the jar and place to plugins folder

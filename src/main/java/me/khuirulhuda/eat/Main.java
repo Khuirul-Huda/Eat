@@ -3,6 +3,7 @@ package me.khuirulhuda.eat;
 import org.bukkit.plugin.java.JavaPlugin;
 import java.net.*;
 import org.bukkit.event.Listener;
+import org.bstats.bukkit.Metrics;
 import me.khuirulhuda.eat.listener.*;
 
 
@@ -14,6 +15,8 @@ public class Main extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         this.getCommand("eat").setExecutor(new EatCommand());
+        int pluginId = 11254; //DONT TOUCH!
+        Metrics metrics = new Metrics(this, pluginId);
         INSTANCE = this;
         this.getLogger().info("Eat Plugin by Khuirul-Huda Successfully Enabled");
     }

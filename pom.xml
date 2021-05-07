@@ -32,7 +32,7 @@
     <dependency>
            <groupId>org.spigotmc</groupId>
            <artifactId>spigot-api</artifactId>
-           <version>LATEST</version>
+           <version>1.16.5-R0.1-SNAPSHOT</version>
            <scope>provided</scope>
     </dependency>
     <dependency>
@@ -64,8 +64,7 @@
         <relocations>
           <relocation>
             <pattern>org.bstats</pattern>
-            <!-- Replace this with your package! -->
-            <shadedPattern>your.package</shadedPattern>
+            <shadedPattern>me.khuirulhuda.eat</shadedPattern>
           </relocation>
         </relocations>
       </configuration>

@@ -64,7 +64,7 @@
         <relocations>
           <relocation>
             <pattern>org.bstats</pattern>
-            <shadedPattern>me.khuirulhuda.eat</shadedPattern>
+            <shadedPattern>me.khuirulhuda.eat.Main</shadedPattern>
           </relocation>
         </relocations>
       </configuration>

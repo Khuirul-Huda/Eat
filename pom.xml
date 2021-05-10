@@ -74,13 +74,6 @@
           <goals>
             <goal>shade</goal>
           </goals>
-           <configuration>
-                <artifactSet>
-                    <includes>
-                        <include>org.bstats.bukkit:metrics</include>
-                    </includes>
-                </artifactSet>
-            </configuration>
         </execution>
       </executions>
     </plugin>

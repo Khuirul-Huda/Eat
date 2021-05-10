@@ -64,7 +64,7 @@
         <relocations>
           <relocation>
             <pattern>org.bstats</pattern>
-            <shadedPattern>me.khuirulhuda.eat.org.bstats</shadedPattern>
+            <shadedPattern>me.khuirulhuda.eat</shadedPattern>
           </relocation>
         </relocations>
       </configuration>
@@ -74,6 +74,13 @@
           <goals>
             <goal>shade</goal>
           </goals>
+           <configuration>
+                <artifactSet>
+                    <includes>
+                        <include>org.bstats.bukkit:metrics</include>
+                    </includes>
+                </artifactSet>
+            </configuration>
         </execution>
       </executions>
     </plugin>

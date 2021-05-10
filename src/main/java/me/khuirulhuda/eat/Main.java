@@ -3,7 +3,7 @@ package me.khuirulhuda.eat;
 import org.bukkit.plugin.java.JavaPlugin;
 import java.net.*;
 import org.bukkit.event.Listener;
-import org.bstats.bukkit.Metrics;
+import me.khuirulhuda.eat.org.bstats.*;
 import me.khuirulhuda.eat.listener.*;
 
 

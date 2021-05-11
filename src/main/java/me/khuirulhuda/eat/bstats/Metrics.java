@@ -1,4 +1,4 @@
-package me.khuirulhuda.eat.bstats.Metrics;
+package me.khuirulhuda.eat.bstats;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

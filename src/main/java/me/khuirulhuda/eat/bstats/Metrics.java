@@ -1,4 +1,4 @@
-package org.bstats.bukkit;
+package me.khuirulhuda.eat.bstats.Metrics;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

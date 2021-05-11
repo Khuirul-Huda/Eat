@@ -6,8 +6,6 @@ import org.bukkit.event.Listener;
 import me.khuirulhuda.eat.bstats.Metrics;
 import me.khuirulhuda.eat.listener.*;
 
-
-
 public class Main extends JavaPlugin implements Listener {
   
   private static Main INSTANCE;

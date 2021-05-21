@@ -5,6 +5,9 @@ import java.net.*;
 import org.bukkit.event.Listener;
 import me.khuirulhuda.eat.bstats.Metrics;
 import me.khuirulhuda.eat.listener.*;
+import me.khuirulhuda.eat.events.*;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 
 public class Main extends JavaPlugin implements Listener {
   
@@ -13,6 +16,7 @@ public class Main extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         this.getCommand("eat").setExecutor(new EatCommand());
+        Bukkit.getPluginManager().registerEvents(new FoodLevelChange(), this);
         int pluginId = 11254; //DONT TOUCH!
         Metrics metrics = new Metrics(this, pluginId);
         INSTANCE = this;

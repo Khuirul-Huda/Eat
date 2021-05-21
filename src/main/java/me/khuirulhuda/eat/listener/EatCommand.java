@@ -26,6 +26,7 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.event.block.Action;
 import me.khuirulhuda.eat.Main;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.ChatColor;
 /**
  * i doesn't have a pc so there's many missing import because i'm not using real ide
  * */
@@ -47,16 +48,16 @@ public class EatCommand implements CommandExecutor, Listener {
                   
                   try {
                     player.getInventory().addItem(cookedChicken);
-                    sender.sendMessage("Successfully added Cooked Chicken");
+                    sender.sendMessage(ChatColor.GREEN + "Successfully added Cooked Chicken");
                     
                   } catch(Exception e) {
                     Main.getInstance().getLogger().warning(e.toString());
-                    sender.sendMessage("An Error Occured, Your Inventory is full?");
+                    sender.sendMessage(ChatColor.RED + "An Error Occured, Your Inventory is full?");
                   }
                   
                   
                 } else {
-                  sender.sendMessage("You're not hungry yet!");
+                  sender.sendMessage(ChatColor.YELLOW + "You're not hungry yet!");
                   Main.getInstance().getLogger().warning("not hungry yet");
                 }
               

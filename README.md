@@ -6,7 +6,7 @@
 [![hits](https://hits.deltapapa.io/github/Khuirul-Huda/Eat.svg)](#)
 
 
-# Eat Plugin
+# Eat Plugin (Useless Plugin :D)
 
 Simple spigot plugin to give many food to players for free. Currently not customizable
 ![Preview](https://raw.githubusercontent.com/Khuirul-Huda/Eat/main/.images/foodbar_screenshot.png)
@@ -45,4 +45,4 @@ Permissions of this strong copyleft license are conditioned on making available 
 
 # Demo Server
 
-IP: mc.renderycrafty.net
+IP: mc.renderycrafty.my.id
